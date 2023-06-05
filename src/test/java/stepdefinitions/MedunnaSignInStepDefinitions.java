@@ -2,9 +2,15 @@ package stepdefinitions;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
+import pages.MedunnaHomePage;
+import pages.MedunnaLoginPage;
+import pages.MedunnaRoomPage;
 import utilities.Driver;
 
 public class MedunnaSignInStepDefinitions {
+    MedunnaHomePage medunnaHomePage = new MedunnaHomePage();
+    MedunnaLoginPage medunnaLoginPage = new MedunnaLoginPage();
+    MedunnaRoomPage medunnaRoomPage = new MedunnaRoomPage();
 
     @Given("go to {string}")
     public void go_to(String url) {
@@ -14,6 +20,8 @@ public class MedunnaSignInStepDefinitions {
     }
     @When("click on user icon")
     public void click_on_user_icon() {
+
+
 
     }
     @When("click on sign in option")
